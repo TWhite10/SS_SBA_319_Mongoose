@@ -10,6 +10,14 @@ export const userData = [
     {
         username:"user3", 
         email:"email3@example.com"
+    },
+    {
+        username:"user2", 
+        email:"email2@example.com"
+    },
+    {
+        username:"user3", 
+        email:"email3@example.com"
     }
     
 ]
@@ -29,10 +37,24 @@ export const recipeData = [
         title:"recipe3", 
         instructions:" sunt in culpa qui officia deserunt mollit anim id est laborum.",
         cookTime:5
+    },
+    {
+        title:"recipe2", 
+        instructions:" Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        cookTime:90
+    },
+    {
+        title:"recipe3", 
+        instructions:" sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        cookTime:5
     }
     ]
-    
+
 export const commentData = [
-    {}
+    {text:"sunt quii n culpa"},
+    {text:"qui culpain"},
+    {text:"iunt in culpa qui "},
+    {text:"in yunt  qui culpa"},
+    {text:"culpao unt in  qui "}
 ]
 

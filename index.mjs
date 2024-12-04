@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import {userData,recipeData,commentData} from "./utilities/data.mjs";
 
 import users from "./routes/users.mjs";
-//import comments from "./routes/comments.mjs";
+import comments from "./routes/comments.mjs";
 import recipes from "./routes/recipes.mjs";
 import dotenv from "dotenv";
 dotenv.config();
@@ -19,7 +19,7 @@ app.use(express.json());
 
 
 app.use("/users", users);
-//app.use("/comments", comments);
+app.use("/comments", comments);
 app.use("/recipes", recipes);
 
 // Global error handling
