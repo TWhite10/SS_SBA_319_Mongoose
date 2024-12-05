@@ -1,8 +1,15 @@
+Recipe API
+A Node.js/Express API with MongoDB that manages recipes, users, and comments.
 
-Recipe sharing platform 
 
 Key Features:
-- 
+- Recipe creation and management 
+- User management
+- Comment intergration
+- MongoDB database
+- Mongoose 
+- Database indexing
+- Data validation
 
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
@@ -10,6 +17,13 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 Authors
 Thembi Sazambile
 
+
+
+Installation 
+
+npm package
+// npm
+npm install
 
 Acknowledgements 
 https://expressjs.com/
@@ -19,7 +33,7 @@ https://mongoosejs.com/docs/tutorials/findoneandupdate.html
 https://www.digitalocean.com/community/tutorials/js-modules-es6
 
 
-Inspiration - Youtube
+
 Code  - https://stackoverflow.com/
 Code  - https://www.geeksforgeeks.org/
 https://developer.mozilla.org/en-US/

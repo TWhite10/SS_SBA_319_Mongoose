@@ -26,6 +26,6 @@ const commentsSchema = new mongoose.Schema({
     
 })
 
-commentsSchema.index({ text: 1 });
+commentsSchema.index({ user:1, text: 1,recipe:1 });
 
 export default mongoose.model("Comments", commentsSchema);

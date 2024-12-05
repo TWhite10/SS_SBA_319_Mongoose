@@ -20,7 +20,7 @@ const recipesSchema = new mongoose.Schema({
      
 })
 
-recipesSchema.index({ instructions: 1 });
+recipesSchema.index({ title: 1 });
 
 
 export default mongoose.model("Recipe", recipesSchema);

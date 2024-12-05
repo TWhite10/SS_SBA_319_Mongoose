@@ -51,10 +51,31 @@ export const recipeData = [
     ]
 
 export const commentData = [
-    {text:"sunt quii n culpa"},
-    {text:"qui culpain"},
-    {text:"iunt in culpa qui "},
-    {text:"in yunt  qui culpa"},
-    {text:"culpao unt in  qui "}
+
+    {
+        text:"sunt quii n culpa",
+        user:"User name ",
+        recipe:"ilk"
+    },
+    {
+        text:"qui culpain",
+        user:"User name ",
+        recipe:"ilk"
+    },
+    {
+        text:"iunt in culpa qui",
+        user:"User name ",
+        recipe:"ilk" },
+
+    {
+        text:"in yunt qui culpa",
+        user:"User name ",
+        recipe:"ilk"
+    },
+    {
+        text:"culpao unt in qui ",
+        user:"User name ",
+        recipe:"ilk"
+    }
 ]
 

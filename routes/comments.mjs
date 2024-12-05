@@ -5,6 +5,7 @@ import Comment from "../models/comments.mjs";
 
 const router = express.Router();
 //get all the comments
+//http://localhost:5050/comments
 router.get("/", async (req, res) => {
   try {
     const comments = await Comment.find({});
@@ -15,6 +16,7 @@ router.get("/", async (req, res) => {
 });
 
 // Create a single  comment
+//http://localhost:5050/comments
 router.post("/", async (req, res) => {
     let newDocument = req.body;
 
@@ -30,6 +32,7 @@ router.post("/", async (req, res) => {
   });
 
     // Updating  comment
+    //http://localhost:5050/comments/:id
   router.patch("/:id", async (req, res) => {
     try{
       const  comment = await Comment.findByIdAndUpdate(
@@ -49,6 +52,7 @@ router.post("/", async (req, res) => {
   });
 
   //Delete a single  comment
+  //http://localhost:5050/comments/:id
   router.delete("/:id", async (req, res) => {
     try{
       const  comment = await Comment.findByIdAndDelete(

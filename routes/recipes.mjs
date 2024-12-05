@@ -5,6 +5,7 @@ import Recipe from "../models/recipes.mjs";
 
 const router = express.Router();
 //get all the recipes
+//http://localhost:5050/comments
 router.get("/", async (req, res) => {
   try {
     const recipes = await Recipe.find({});
@@ -15,6 +16,7 @@ router.get("/", async (req, res) => {
 });
 
 // Create a single recipe 
+//http://localhost:5050/recipes
 router.post("/", async (req, res) => {
     let newDocument = req.body;
 
@@ -30,6 +32,7 @@ router.post("/", async (req, res) => {
   });
 
     // Updating recipe
+    //http://localhost:5050/recipes/:id
   router.patch("/:id", async (req, res) => {
     try{
       const recipe = await Recipe.findByIdAndUpdate(
@@ -49,6 +52,7 @@ router.post("/", async (req, res) => {
   });
 
   //Delete a single recipe
+  //http://localhost:5050/recipes/:id
   router.delete("/:id", async (req, res) => {
     try{
       const result = await Recipe.findByIdAndDelete(

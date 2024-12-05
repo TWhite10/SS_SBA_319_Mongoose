@@ -5,6 +5,7 @@ import User from "../models/users.mjs";
 
 const router = express.Router();
 //get all the users
+//http://localhost:5050/users
 router.get("/", async (req, res) => {
   try {
     const users = await User.find({});
@@ -14,7 +15,10 @@ router.get("/", async (req, res) => {
   }
 });
 
+
+
 // Create a single user 
+//http://localhost:5050/users
 router.post("/", async (req, res) => {
     let newDocument = req.body;
 
@@ -32,6 +36,7 @@ router.post("/", async (req, res) => {
   
   
   // Get a single user 
+  //http://localhost:5050/users/:id
   router.get("/:id", async (req, res) => {
     try {
       const user = await User.findById(req.params.id);
@@ -46,6 +51,8 @@ router.post("/", async (req, res) => {
    
    });
 //Delete a single user
+//http://localhost:5050/users/:id
+
   router.delete("/:id", async (req, res) => {
     try{
       const result = await User.findByIdAndDelete(
